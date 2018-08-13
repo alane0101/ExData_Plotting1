@@ -36,5 +36,8 @@ lines(strptime(xaxis, format = "%Y-%m-%d %H:%M:%S", tz = ""), range$Sub_metering
       type = "l", ylab = "Energy sub metering", xlab = "", col = "red")
 lines(strptime(xaxis, format = "%Y-%m-%d %H:%M:%S", tz = ""), range$Sub_metering_3, 
       type = "l", ylab = "Energy sub metering", xlab = "", col = "blue")
+legend(x = "topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
+       lty = 1, col = c("black", "red", "blue"), border = "black")
 
 dev.off()
+
